@@ -1,0 +1,82 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #e6e6e6; /* LICHTGRIJS */
+  text-align: center;
+  padding: 20px;
+}
+
+h1 {
+  margin-bottom: 10px;
+}
+
+.choices {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.choice-img {
+  width: 120px;
+  height: 120px;
+  cursor: pointer;
+  transition: 0.2s;
+  border-radius: 10px;
+  border: 3px solid transparent;
+}
+
+.choice-img:hover {
+  transform: scale(1.1);
+  border-color: #007bff;
+}
+
+#result {
+  font-size: 24px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+/* Scoreboard */
+.scoreboard {
+  margin-top: 30px;
+  background: white;
+  padding: 20px;
+  width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* WIN FLASH (groen) */
+.flash-win {
+  animation: flashWin 0.8s ease-out;
+}
+
+@keyframes flashWin {
+  0% { color: green; }
+  100% { color: black; }
+}
+
+/* LOSE FLASH (rood) */
+.flash-lose {
+  animation: flashLose 0.8s ease-out;
+}
+
+@keyframes flashLose {
+  0% { color: red; }
+  100% { color: black; }
+}
+
+/* SHAKE (gelijkspel) */
+.shake {
+  animation: shakeAnim 0.8s;
+}
+
+@keyframes shakeAnim {
+  0% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  50% { transform: translateX(5px); }
+  75% { transform: translateX(-5px); }
+  100% { transform: translateX(0); }
+}

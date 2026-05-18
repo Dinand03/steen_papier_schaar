@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <title>Steen Papier Schaar</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>Steen, papier, schaar</h1>
+
+  <p>Computer: <span id="computer"></span></p>
+  <p>Jouw keuze: <span id="human"></span></p>
+  <p id="result">Nog geen resultaat</p>
+
+  <div class="choices">
+    <img id="steen" class="choice-img" src="foto's/steen.png" alt="Steen">
+    <img id="papier" class="choice-img" src="foto's/papier.png" alt="Papier">
+    <img id="schaar" class="choice-img" src="foto's/schaar.png" alt="Schaar">
+  </div>
+
+  <div class="scoreboard">
+    <h2>Scoreboard</h2>
+    <p>Rondes gespeeld: <span id="rondes">0</span></p>
+    <p>Jij wint: <span id="scorePlayer">0</span></p>
+    <p>Computer wint: <span id="scoreCPU">0</span></p>
+    <p>Gelijkspel: <span id="scoreDraw">0</span></p>
+  </div>
+
+  <!-- Geluidseffecten -->
+  <audio id="soundWin" src="sounds/win.mp3"></audio>
+  <audio id="soundLose" src="sounds/lose.mp3"></audio>
+  <audio id="soundDraw" src="sounds/draw.mp3"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
